@@ -273,8 +273,8 @@ function bounce (obj, quadrant) {
 }
 
 function checkClose(ball, block) {
-    blockcenter = [block.x + block.width / 2, block.y + block.height / 2];
-    centertoedge = checkDistance(block.x, block.y, blockcenter[0], blockcenter[1]);
+    var blockcenter = [block.x + block.width / 2, block.y + block.height / 2];
+    var centertoedge = checkDistance(block.x, block.y, blockcenter[0], blockcenter[1]);
     if (checkDistance(ball.x, ball.y, blockcenter[0], blockcenter[1]) < centertoedge + ball.radius) {
         return true
     }
@@ -546,7 +546,7 @@ function level5() {
 levels.push(level5);
 
 var cookie = document.cookie.split("; ");
-for (i=0;i<cookie.length;i++) {
+for (var i=0;i<cookie.length;i++) {
     var cooki = cookie[i].split("=");
     if (cooki[0] == "breakout") {currentlevel = parseInt(cooki[1]);}
 }

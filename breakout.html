@@ -1,12 +1,12 @@
 <html>
   <head>
-    <script defer src="breakout.js"></script>
+    <script defer src="breakout.js" type="module"></script>
   </head>
   <body>
     <div id="game" style="padding-top: 15px">
       <canvas id="myCanvas" width="1000" height="700" style="border:1px solid black;">
       </canvas><br>
-      %<input id="puchance" size=3 value="7" style="text-align: center" oninput="changeChance()"><br><img src="/static/images/gpusymbol.jpg" style="padding-top: 5px"><img src="/static/images/mbpusymbol.jpg" style="padding-top: 5px">
+      <input id="puchance" size=3 value="7" style="text-align: center" oninput="changeChance()"> % chance of powerup drops
     </div>
   </body>
 </html>
